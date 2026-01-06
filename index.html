@@ -664,6 +664,186 @@
             margin-top: 2rem;
         }
 
+        /* Companies Carousel */
+        .companies-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 4rem auto;
+            overflow: hidden;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 300%; /* 3 slides */
+        }
+
+        .company-slide {
+            flex: 0 0 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 2rem;
+            min-height: 300px;
+        }
+
+        .company-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            background: var(--bg-dark);
+            border: 2px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .company-logo:hover {
+            border-color: var(--border-hover);
+            transform: scale(1.05);
+        }
+
+        .company-logo img {
+            max-width: 160px;
+            max-height: 160px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease;
+        }
+
+        .company-logo:hover img {
+            filter: brightness(1);
+        }
+
+        /* Carousel Controls */
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid var(--border);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .indicator:hover {
+            border-color: var(--primary);
+        }
+
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 50%;
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .carousel-arrow:hover {
+            border-color: var(--primary);
+            background: var(--bg-dark);
+        }
+
+        .carousel-prev {
+            left: 20px;
+        }
+
+        .carousel-next {
+            right: 20px;
+        }
+
+        .carousel-arrow span {
+            line-height: 1;
+            user-select: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .companies-carousel {
+                margin: 3rem auto;
+            }
+
+            .company-slide {
+                padding: 2rem 1rem;
+                min-height: 250px;
+            }
+
+            .company-logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .company-logo img {
+                max-width: 120px;
+                max-height: 120px;
+            }
+
+            .carousel-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+
+            .carousel-prev {
+                left: 10px;
+            }
+
+            .carousel-next {
+                right: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .company-logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .company-logo img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            .carousel-arrow {
+                display: none; /* Hide arrows on very small screens */
+            }
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid var(--border);
@@ -813,6 +993,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">AI Work</a></li>
+                <li><a href="#companies">Companies</a></li>
                 <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#timeline">Timeline</a></li>
                 <li><a href="#thinking">Thinking</a></li>
@@ -1050,6 +1231,52 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Carousel Section -->
+    <section id="companies" class="section companies-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Experience</div>
+                <h2 class="section-title">Companies I've Built With</h2>
+                <p class="section-description">
+                    From FMCG analytics to enterprise ERP systems, I've delivered production AI across diverse industries and scale challenges.
+                </p>
+            </div>
+
+            <div class="companies-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="company-slide">
+                            <div class="company-logo">
+                                <img src="11.png" alt="Company Logo 1" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="company-slide">
+                            <div class="company-logo">
+                                <img src="83.png" alt="Company Logo 2" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="company-slide">
+                            <div class="company-logo">
+                                <img src="93.png" alt="Company Logo 3" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                </div>
+                <button class="carousel-arrow carousel-prev" aria-label="Previous company">
+                    <span>‹</span>
+                </button>
+                <button class="carousel-arrow carousel-next" aria-label="Next company">
+                    <span>›</span>
+                </button>
             </div>
         </div>
     </section>
@@ -1328,6 +1555,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
+                    <li><a href="#companies">Companies</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -1405,6 +1633,71 @@
                     link.classList.add('active');
                 }
             });
+        });
+
+        // Companies Carousel Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.carousel-track');
+            const slides = document.querySelectorAll('.company-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+
+            if (!track || !slides.length) return;
+
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            function updateCarousel(index) {
+                track.style.transform = `translateX(-${index * 100}%)`;
+
+                // Update indicators
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('active', i === index);
+                });
+
+                currentIndex = index;
+            }
+
+            function nextSlide() {
+                const nextIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel(nextIndex);
+            }
+
+            function prevSlide() {
+                const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel(prevIndex);
+            }
+
+            // Event listeners
+            nextBtn?.addEventListener('click', nextSlide);
+            prevBtn?.addEventListener('click', prevSlide);
+
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => updateCarousel(index));
+            });
+
+            // Auto-play (optional - uncomment if wanted)
+            // let autoplayInterval = setInterval(nextSlide, 4000);
+
+            // Pause autoplay on hover
+            // const carousel = document.querySelector('.companies-carousel');
+            // carousel?.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+            // carousel?.addEventListener('mouseleave', () => {
+            //     autoplayInterval = setInterval(nextSlide, 4000);
+            // });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                }
+            });
+
+            // Initialize first slide
+            updateCarousel(0);
         });
     </script>
 </body>
