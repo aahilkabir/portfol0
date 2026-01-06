@@ -416,6 +416,49 @@
             }
         }
 
+        /* Discussion Image */
+        .discussion-image {
+            margin: 2rem auto;
+        }
+
+        .discussion-image img {
+            transition: transform 0.3s ease;
+        }
+
+        .discussion-image img:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .discussion-image img {
+                max-width: 100%;
+            }
+        }
+
+        /* Lark Team Image */
+        .lark-team-image {
+            margin: 2rem auto;
+        }
+
+        .lark-team-image img {
+            transition: transform 0.3s ease;
+        }
+
+        .lark-team-image img:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .lark-team-image img {
+                max-width: 100%;
+            }
+
+            .lark-team-section p {
+                font-size: 0.8rem;
+                margin-top: 0.8rem;
+            }
+        }
+
         /* Case Study Cards */
         .case-studies {
             display: grid;
@@ -1227,10 +1270,10 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">AI Product Manager · Systems Architect · 0→1 Operator</div>
-                <h1>Mohammed Kabir<br>Shabhir Ahamed</h1>
+            <div class="hero-badge">AI Product Manager · Systems Architect · 0→1 Operator</div>
+            <h1>Mohammed Kabir<br>Shabhir Ahamed</h1>
                 <h2>Building AI Systems That Scale<br>& Earn Trust</h2>
-                <p class="hero-quote">
+            <p class="hero-quote">
                     I transform AI research into <strong>production-grade systems</strong> that handle real-world constraints: scale, latency, human unpredictability, and business pressure. The gap between a working prototype and a scalable product isn't code—it's <strong>architectural wisdom</strong>.
                 </p>
 
@@ -1252,20 +1295,20 @@
                         <div class="trust-text">Human-Centered</div>
                     </div>
                 </div>
-
-                <div class="stats-bar">
-                    <div class="stat">
-                        <div class="stat-value">~1.5M SAR</div>
+            
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value">~1.5M SAR</div>
                         <div class="stat-label">Daily transaction volume managed</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">0→49</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0→49</div>
                         <div class="stat-label">Team members scaled globally</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">10K+</div>
-                        <div class="stat-label">Daily AI-processed documents</div>
-                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">10K+</div>
+                    <div class="stat-label">Daily AI-processed documents</div>
+                </div>
                 </div>
             </div>
 
@@ -1322,6 +1365,15 @@
                     <h3>Systems Theory (0→1 Mindset)</h3>
                     <p>Having built teams and products from scratch, I understand that feedback loops are everything. A product that cannot learn from its own usage data is dead on arrival.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Image Section -->
+    <section class="section" style="padding: 4rem 0;">
+        <div class="container">
+            <div class="discussion-image" style="text-align: center; margin: 0 auto; max-width: 800px;">
+                <img src="discussion.jpg" alt="AI Product Management Discussion - Professional collaboration and strategic planning" style="width: 100%; max-width: 700px; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);" loading="lazy">
             </div>
         </div>
     </section>
@@ -1591,6 +1643,16 @@
                     <p><strong>The Pressure:</strong> If the system goes down, revenue stops immediately</p>
                     <p><strong>The Strategy:</strong> Prioritized Reliability Engineering over feature bloat. Implemented "Offline-First" architecture for POS systems.</p>
                 </div>
+            </div>
+
+            <!-- Lark Team Image -->
+            <div class="lark-team-section" style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">
+                <div class="lark-team-image" style="max-width: 900px; margin: 0 auto;">
+                    <img src="Lark team.jpg" alt="Lark Team - The 49-member team I built from 0 employees in Calicut, Kerala" style="width: 100%; max-width: 800px; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);" loading="lazy">
+                </div>
+                <p style="color: var(--accent); font-size: 0.9rem; margin-top: 1rem; font-weight: 500;">
+                    The Lark Team - 49 members built from 0 in Calicut, Kerala
+                </p>
             </div>
 
         </div>
