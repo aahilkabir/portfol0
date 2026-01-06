@@ -84,11 +84,13 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
             background: var(--bg-dark);
             color: var(--primary);
-            line-height: 1.6;
+            line-height: 1.7;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -106,7 +108,7 @@
             backdrop-filter: blur(10px);
             border-bottom: 1px solid var(--border);
             z-index: 1000;
-            padding: 1.5rem 0;
+            padding: 1.2rem 0;
         }
 
         nav .container {
@@ -178,6 +180,9 @@
             grid-template-columns: 1fr 400px;
             gap: 4rem;
             align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
         }
 
         .hero-content {
@@ -212,28 +217,28 @@
         }
 
         .hero h1 {
-            font-size: clamp(3.5rem, 9vw, 8rem);
+            font-size: clamp(3.8rem, 9vw, 8.5rem);
             font-weight: 700;
-            line-height: 1;
-            margin-bottom: 1.5rem;
+            line-height: 1.05;
+            margin-bottom: 1.2rem;
             letter-spacing: -0.03em;
         }
 
         .hero h2 {
-            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
             font-weight: 600;
             line-height: 1.2;
             color: var(--accent);
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             letter-spacing: -0.02em;
         }
 
         .hero-quote {
-            font-size: clamp(1.3rem, 2vw, 1.8rem);
-            line-height: 1.5;
+            font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+            line-height: 1.6;
             color: var(--secondary);
             max-width: 900px;
-            margin-bottom: 4rem;
+            margin-bottom: 3.5rem;
             font-weight: 400;
         }
 
@@ -344,34 +349,69 @@
         }
 
         .section-header {
-            margin-bottom: 5rem;
+            margin-bottom: 4rem;
         }
 
         .section-label {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: var(--accent);
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 1rem;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.8rem;
+            opacity: 0.8;
         }
 
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.8rem, 5.5vw, 4.5rem);
             font-weight: 700;
             line-height: 1.1;
             margin-bottom: 1.5rem;
             letter-spacing: -0.02em;
+            color: var(--primary);
         }
 
         .section-description {
             font-size: 1.3rem;
             color: var(--secondary);
-            max-width: 800px;
-            line-height: 1.6;
+            max-width: 900px;
+            line-height: 1.7;
         }
 
         /* Image Placeholder */
+        .image-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px; /* Adjust as needed for image size */
+            background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(26, 26, 26, 0.8) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            overflow: hidden;
+        }
+
+        .image-placeholder img {
+            max-width: 100%;
+            max-height: 380px; /* Adjust as needed */
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .image-placeholder {
+                min-height: 250px;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .image-placeholder img {
+                max-height: 300px;
+            }
+        }
 
         /* Case Study Cards */
         .case-studies {
@@ -520,8 +560,8 @@
         /* Timeline */
         .timeline {
             position: relative;
-            padding-left: 4rem;
-            margin-top: 4rem;
+            padding-left: 4.5rem;
+            margin-top: 5rem;
         }
 
         .timeline::before {
@@ -531,41 +571,45 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: linear-gradient(to bottom, var(--border), transparent);
+            background: linear-gradient(to bottom, var(--border), rgba(34, 34, 34, 0.2), transparent);
         }
 
         .timeline-item {
             position: relative;
-            padding-bottom: 4rem;
+            padding-bottom: 5rem;
         }
 
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -4.6rem;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
+            left: -4.8rem;
+            top: 0.2rem;
+            width: 14px;
+            height: 14px;
             background: var(--primary);
             border-radius: 50%;
             border: 3px solid var(--bg-dark);
+            box-shadow: 0 0 0 2px var(--accent);
         }
 
         .timeline-year {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
+            color: var(--primary);
         }
 
         .timeline-title {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             color: var(--accent);
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
         }
 
         .timeline-description {
             color: var(--secondary);
-            line-height: 1.8;
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
 
         /* Two Column Layout */
@@ -589,21 +633,30 @@
         }
 
         .principle-card {
-            padding: 2rem;
+            padding: 2.5rem;
             background: var(--bg-card);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            margin-bottom: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .principle-card:hover {
+            border-color: var(--border-hover);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
         }
 
         .principle-card h4 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
             color: var(--primary);
         }
 
         .principle-card p {
             color: var(--secondary);
+            line-height: 1.7;
+            font-size: 0.98rem;
         }
 
         /* Skills Grid */
@@ -615,51 +668,57 @@
         }
 
         .skill-card {
-            padding: 2.5rem;
+            padding: 3rem;
             background: var(--bg-card);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            border-radius: 12px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .skill-card:hover {
             border-color: var(--border-hover);
-            transform: translateY(-4px);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
 
         .skill-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.2rem;
+            opacity: 0.8;
         }
 
         .skill-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary);
         }
 
         .skill-card p {
             color: var(--secondary);
-            line-height: 1.8;
+            line-height: 1.7;
+            font-size: 0.98rem;
         }
 
         /* CTA Section */
         .cta-section {
             text-align: center;
-            padding: 8rem 0;
+            padding: 9rem 0;
         }
 
         .cta-section h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.8rem, 5.5vw, 4.5rem);
             margin-bottom: 2rem;
+            color: var(--primary);
         }
 
         .cta-section p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--secondary);
-            margin-bottom: 3rem;
-            max-width: 700px;
+            margin-bottom: 2.5rem;
+            max-width: 750px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.7;
         }
 
         .cta-buttons {
@@ -667,17 +726,20 @@
             gap: 1.5rem;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 2rem;
         }
 
         .btn {
             display: inline-block;
-            padding: 1.2rem 3rem;
-            font-size: 1rem;
+            padding: 1.3rem 3.5rem;
+            font-size: 1.05rem;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
+            border-radius: 8px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             border: 2px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         .btn-primary {
@@ -686,8 +748,9 @@
         }
 
         .btn-primary:hover {
-            background: #ddd;
-            transform: translateY(-2px);
+            background: #e0e0e0;
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .btn-secondary {
@@ -698,7 +761,8 @@
 
         .btn-secondary:hover {
             border-color: var(--primary);
-            transform: translateY(-2px);
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         /* Availability Status */
@@ -1066,11 +1130,11 @@
             }
 
             .timeline {
-                padding-left: 2rem;
+                padding-left: 2.5rem;
             }
 
             .timeline-item::before {
-                left: -2.6rem;
+                left: -3rem;
             }
 
             /* Mobile button touch targets */
@@ -1126,7 +1190,7 @@
         }
     </style>
 </head>
-    <body>
+<body>
     <!-- Skip to main content for accessibility -->
     <a href="#home" class="skip-link">Skip to main content</a>
 
@@ -1226,7 +1290,6 @@
                     I am a systems-first AI Product Manager. My approach is defined by a refusal to view AI in isolation. An LLM is not a product; it is a component within a complex web of data pipelines, user interfaces, infrastructure, and human psychology.
                 </p>
             </div>
-
 
             <div class="skills-grid">
                 <div class="skill-card">
@@ -1842,6 +1905,4 @@
 
     </script>
 </body>
-</html>
-</html>
 </html>
