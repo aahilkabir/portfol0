@@ -173,6 +173,33 @@
             padding: 10rem 0 8rem;
         }
 
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            order: 1;
+        }
+
+        .hero-image {
+            order: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            object-fit: contain;
+        }
+
         .hero-badge {
             display: inline-block;
             padding: 0.6rem 1.2rem;
@@ -345,19 +372,6 @@
         }
 
         /* Image Placeholder */
-        .image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: var(--bg-card);
-            border: 2px dashed var(--border);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent);
-            font-size: 1rem;
-            margin: 3rem 0;
-        }
 
         /* Case Study Cards */
         .case-studies {
@@ -833,6 +847,57 @@
         }
 
         @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+
+            .hero .container {
+                gap: 2rem;
+            }
+
+            .hero-image img {
+                max-width: 280px;
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 15vw, 4rem);
+            }
+
+            .hero h2 {
+                font-size: clamp(1.5rem, 6vw, 2.5rem);
+            }
+
+            .hero-quote {
+                font-size: clamp(1.1rem, 4vw, 1.5rem);
+            }
+
+            .stats-bar {
+                gap: 1.5rem;
+                padding: 2rem 0;
+            }
+
+            .stat-value {
+                font-size: 2rem;
+            }
+
+            .trust-indicators {
+                gap: 1rem;
+                margin: 2rem 0;
+            }
+
+            .trust-item {
+                padding: 0.8rem;
+                min-width: 100px;
+            }
+
+            .trust-icon {
+                font-size: 1.2rem;
+            }
+
             .logo-track {
                 gap: 1.5rem;
                 animation: scrollLogos 20s linear infinite;
@@ -846,6 +911,25 @@
             .logo-item img {
                 max-width: 60px;
                 max-height: 40px;
+            }
+
+            .case-study {
+                padding: 1.5rem;
+                margin: 0 0.5rem;
+            }
+
+            .scroll-banner {
+                padding: 1.5rem 0;
+                margin: 3rem 0;
+            }
+
+            .scroll-item {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .cta-section h2 {
+                font-size: clamp(2rem, 8vw, 3rem);
             }
         }
 
@@ -919,9 +1003,38 @@
                 padding: 8rem 0 6rem;
             }
 
+            .hero .container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .hero-content {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+            }
+
+            .hero h1 {
+                font-size: clamp(2.5rem, 12vw, 5rem);
+            }
+
             .stats-bar {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+                text-align: center;
+            }
+
+            .trust-indicators {
+                gap: 1.5rem;
+                padding: 0 1rem;
+            }
+
+            .trust-item {
+                padding: 1rem;
+                min-width: 120px;
             }
 
             .section {
@@ -940,6 +1053,16 @@
 
             .case-study-content h3 {
                 font-size: 1.8rem;
+            }
+
+            .scroll-banner {
+                padding: 2rem 0;
+                margin: 4rem 0;
+            }
+
+            .scroll-item {
+                font-size: 1.2rem;
+                padding: 0 1.5rem;
             }
 
             .timeline {
@@ -989,6 +1112,7 @@
             to { opacity: 1; }
         }
 
+
         /* Loading state for images */
         .image-loading {
             background: linear-gradient(90deg, var(--bg-card) 25%, var(--border) 50%, var(--bg-card) 75%);
@@ -1025,45 +1149,51 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-badge">AI Product Manager · Systems Architect · 0→1 Operator</div>
-            <h1>Mohammed Kabir<br>Shabhir Ahamed</h1>
-            <h2>Building AI Systems That Scale<br>& Earn Trust</h2>
-            <p class="hero-quote">
-                I transform AI research into <strong>production-grade systems</strong> that handle real-world constraints: scale, latency, human unpredictability, and business pressure. The gap between a working prototype and a scalable product isn't code—it's <strong>architectural wisdom</strong>.
-            </p>
+            <div class="hero-content">
+                <div class="hero-badge">AI Product Manager · Systems Architect · 0→1 Operator</div>
+                <h1>Mohammed Kabir<br>Shabhir Ahamed</h1>
+                <h2>Building AI Systems That Scale<br>& Earn Trust</h2>
+                <p class="hero-quote">
+                    I transform AI research into <strong>production-grade systems</strong> that handle real-world constraints: scale, latency, human unpredictability, and business pressure. The gap between a working prototype and a scalable product isn't code—it's <strong>architectural wisdom</strong>.
+                </p>
 
-            <div class="trust-indicators">
-                <div class="trust-item">
-                    <div class="trust-icon">🔒</div>
-                    <div class="trust-text">Enterprise Security</div>
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-icon">🔒</div>
+                        <div class="trust-text">Enterprise Security</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">⚡</div>
+                        <div class="trust-text">High Performance</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🎯</div>
+                        <div class="trust-text">Regulatory Compliant</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">👥</div>
+                        <div class="trust-text">Human-Centered</div>
+                    </div>
                 </div>
-                <div class="trust-item">
-                    <div class="trust-icon">⚡</div>
-                    <div class="trust-text">High Performance</div>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">🎯</div>
-                    <div class="trust-text">Regulatory Compliant</div>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-icon">👥</div>
-                    <div class="trust-text">Human-Centered</div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-value">~1.5M SAR</div>
+                        <div class="stat-label">Daily transaction volume managed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">0→49</div>
+                        <div class="stat-label">Team members scaled globally</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">10K+</div>
+                        <div class="stat-label">Daily AI-processed documents</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="stats-bar">
-                <div class="stat">
-                    <div class="stat-value">~1.5M SAR</div>
-                    <div class="stat-label">Daily transaction volume managed</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">0→49</div>
-                    <div class="stat-label">Team members scaled globally</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">10K+</div>
-                    <div class="stat-label">Daily AI-processed documents</div>
-                </div>
+            <div class="hero-image">
+                <img src="black.jpg" alt="Mohammed Kabir Shabhir Ahamed - Professional headshot standing with confidence, AI Product Manager" loading="lazy">
             </div>
         </div>
     </section>
@@ -1097,9 +1227,6 @@
                 </p>
             </div>
 
-            <div class="image-placeholder">
-                <img src="discussion.jpg" alt="Mohammed Kabir Shabhir Ahamed - Professional headshot and AI Product Manager" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" loading="lazy">
-            </div>
 
             <div class="skills-grid">
                 <div class="skill-card">
