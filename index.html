@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Kabir Shabhir Ahamed - AI Product Manager & Systems Architect</title>
+    <meta name="description" content="AI Product Manager specializing in production-grade AI systems, enterprise-scale deployments, and human-centered design. 0→1 operator with experience scaling teams to 49+ members across 5 countries.">
+    <meta name="keywords" content="AI Product Manager, Systems Architect, Machine Learning, Enterprise AI, Product Strategy, Team Leadership, AI Engineering">
+    <meta name="author" content="Mohammed Kabir Shabhir Ahamed">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mohammed Kabir Shabhir Ahamed - AI Product Manager">
+    <meta property="og:description" content="AI Product Manager specializing in production-grade AI systems, enterprise-scale deployments, and human-centered design.">
+    <meta property="og:url" content="https://your-portfolio-domain.com">
+    <meta property="og:image" content="https://your-portfolio-domain.com/discussion.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mohammed Kabir Shabhir Ahamed - AI Product Manager">
+    <meta name="twitter:description" content="AI Product Manager specializing in production-grade AI systems, enterprise-scale deployments, and human-centered design.">
+    <meta name="twitter:image" content="https://your-portfolio-domain.com/discussion.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://your-portfolio-domain.com">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohammed Kabir Shabhir Ahamed",
+      "jobTitle": "AI Product Manager & Systems Architect",
+      "description": "AI Product Manager specializing in production-grade AI systems, enterprise-scale deployments, and human-centered design. 0→1 operator with experience scaling teams to 49+ members across 5 countries.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressRegion": "Tamilnadu",
+        "addressCountry": "India"
+      },
+      "email": "mailto:aahilkabir@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohammedksa/",
+        "https://drive.google.com/file/d/1I6D2KqiLZLzykSx00BoQQsahVs3lXybG/view?usp=sharing"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Product Management",
+        "Systems Architecture",
+        "Machine Learning",
+        "Enterprise Software",
+        "Team Leadership",
+        "AI Ethics",
+        "Data Science"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "AI Product Manager",
+        "occupationLocation": {
+          "@type": "City",
+          "name": "Chennai"
+        }
+      }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #fff;
+            --secondary: #999;
+            --accent: #666;
+            --bg-dark: #000;
+            --bg-card: #0a0a0a;
+            --border: #222;
+            --border-hover: #444;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 1.5rem 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        /* Accessibility */
+        .nav-links a:focus,
+        .btn:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Skip to main content link for screen readers */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary);
+            color: var(--bg-dark);
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1001;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10rem 0 8rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.5rem, 9vw, 8rem);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--accent);
+            margin-bottom: 3rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-quote {
+            font-size: clamp(1.3rem, 2vw, 1.8rem);
+            line-height: 1.5;
+            color: var(--secondary);
+            max-width: 900px;
+            margin-bottom: 4rem;
+            font-weight: 400;
+        }
+
+        .hero-quote strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Trust Indicators */
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            min-width: 120px;
+            transition: all 0.3s ease;
+        }
+
+        .trust-item:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-2px);
+        }
+
+        .trust-icon {
+            font-size: 1.5rem;
+        }
+
+        .trust-text {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            padding: 4rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: var(--secondary);
+        }
+
+        /* Scrolling Banner */
+        .scroll-banner {
+            width: 100%;
+            overflow: hidden;
+            background: linear-gradient(90deg, var(--bg-card) 0%, #111 50%, var(--bg-card) 100%);
+            padding: 3rem 0;
+            margin: 6rem 0;
+        }
+
+        .scroll-content {
+            display: flex;
+            animation: scroll 35s linear infinite;
+        }
+
+        .scroll-item {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            padding: 0 3rem;
+            white-space: nowrap;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 8rem 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .section-header {
+            margin-bottom: 5rem;
+        }
+
+        .section-label {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-description {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        /* Image Placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--bg-card);
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1rem;
+            margin: 3rem 0;
+        }
+
+        /* Case Study Cards */
+        .case-studies {
+            display: grid;
+            gap: 5rem;
+            margin-top: 4rem;
+        }
+
+        .case-study {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 4rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.4s ease;
+        }
+
+        .case-study:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .case-study-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .case-study-tag {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-section {
+            margin-top: 2rem;
+        }
+
+        .case-study-section h4 {
+            font-size: 1rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .case-study-section p, .case-study-section ul {
+            color: var(--secondary);
+            line-height: 1.8;
+        }
+
+        .case-study-section ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .case-study-section li::before {
+            content: '→';
+            color: var(--accent);
+            margin-right: 0.8rem;
+        }
+
+        .case-study-visual {
+            background: var(--bg-dark);
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            color: var(--accent);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 4rem;
+            margin-top: 4rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--border), transparent);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 4rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -4.6rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 3px solid var(--bg-dark);
+        }
+
+        .timeline-year {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .timeline-description {
+            color: var(--secondary);
+            line-height: 1.8;
+        }
+
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        .column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .column p {
+            color: var(--secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .principle-card {
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .principle-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .principle-card p {
+            color: var(--secondary);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .skill-card {
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: var(--secondary);
+            line-height: 1.8;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 2rem;
+        }
+
+        .cta-section p {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        .btn-primary:hover {
+            background: #ddd;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Availability Status */
+        .availability-status {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .status-text {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Response Time */
+        .response-time {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 4rem 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-quote {
+            max-width: 600px;
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-style: italic;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            .case-study {
+                grid-template-columns: 1fr;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 8rem 0 6rem;
+            }
+
+            .stats-bar {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .section {
+                padding: 5rem 0;
+            }
+
+            .timeline {
+                padding-left: 2rem;
+            }
+
+            .timeline-item::before {
+                left: -2.6rem;
+            }
+
+            /* Mobile button touch targets */
+            .btn {
+                padding: 1.5rem 2rem;
+                font-size: 1.1rem;
+                min-height: 44px;
+            }
+
+            /* Mobile navigation improvements */
+            nav {
+                padding: 1rem 0;
+            }
+
+            .nav-links {
+                font-size: 1rem;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Loading state for images */
+        .image-loading {
+            background: linear-gradient(90deg, var(--bg-card) 25%, var(--border) 50%, var(--bg-card) 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+    <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#home" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">MK</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">AI Work</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#thinking">Thinking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-badge">AI Product Manager · Systems Architect · 0→1 Operator</div>
+            <h1>Mohammed Kabir<br>Shabhir Ahamed</h1>
+            <h2>Building AI Systems That Scale<br>& Earn Trust</h2>
+            <p class="hero-quote">
+                I transform AI research into <strong>production-grade systems</strong> that handle real-world constraints: scale, latency, human unpredictability, and business pressure. The gap between a working prototype and a scalable product isn't code—it's <strong>architectural wisdom</strong>.
+            </p>
+
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <div class="trust-text">Enterprise Security</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-text">High Performance</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🎯</div>
+                    <div class="trust-text">Regulatory Compliant</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">👥</div>
+                    <div class="trust-text">Human-Centered</div>
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value">~1.5M SAR</div>
+                    <div class="stat-label">Daily transaction volume managed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0→49</div>
+                    <div class="stat-label">Team members scaled globally</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">10K+</div>
+                    <div class="stat-label">Daily AI-processed documents</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Banner -->
+    <div class="scroll-banner">
+        <div class="scroll-content">
+            <div class="scroll-item">PRODUCTION AI SYSTEMS</div>
+            <div class="scroll-item">•</div>
+            <div class="scroll-item">HUMAN-CENTERED DESIGN</div>
+            <div class="scroll-item">•</div>
+            <div class="scroll-item">ENTERPRISE SCALE</div>
+            <div class="scroll-item">•</div>
+            <div class="scroll-item">PRODUCTION AI SYSTEMS</div>
+            <div class="scroll-item">•</div>
+            <div class="scroll-item">HUMAN-CENTERED DESIGN</div>
+            <div class="scroll-item">•</div>
+            <div class="scroll-item">ENTERPRISE SCALE</div>
+            <div class="scroll-item">•</div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">About</div>
+                <h2 class="section-title">The Polymath Approach to Product</h2>
+                <p class="section-description">
+                    I am a systems-first AI Product Manager. My approach is defined by a refusal to view AI in isolation. An LLM is not a product; it is a component within a complex web of data pipelines, user interfaces, infrastructure, and human psychology.
+                </p>
+            </div>
+
+            <div class="image-placeholder">
+                <img src="discussion.jpg" alt="Mohammed Kabir Shabhir Ahamed - Professional headshot and AI Product Manager" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" loading="lazy">
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🧮</div>
+                    <h3>Mathematical & CS Foundations</h3>
+                    <p>Background in Calculus and Algebra allows me to think in optimization landscapes, vectors, and rates of change. I see neural networks as function approximators with specific limitations, not black boxes.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Neuroscience & Cognitive Load</h3>
+                    <p>I study neuroplasticity and human attention, directly informing UX/UI design. Humans have limited working memory — I design "Silent AI" that processes complexity in the background.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Systems Theory (0→1 Mindset)</h3>
+                    <p>Having built teams and products from scratch, I understand that feedback loops are everything. A product that cannot learn from its own usage data is dead on arrival.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Work Section -->
+    <section id="work" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Case Studies</div>
+                <h2 class="section-title">The Anatomy of Execution</h2>
+                <p class="section-description">
+                    Deep dives into production-grade AI systems that handle real scale, real constraints, and real business impact.
+                </p>
+            </div>
+
+            <div class="case-studies">
+                <!-- Case Study 1 -->
+                <div class="case-study">
+                    <div class="case-study-content">
+                        <h3>AI Receipt Intelligence</h3>
+                        <span class="case-study-tag">Beebag · Malaysia · FMCG Analytics</span>
+
+                        <div class="case-study-section">
+                            <h4>The Problem</h4>
+                            <p>FMCG partners needed spending data immediately. Processing thousands of receipts daily via manual entry was slow, expensive, and error-prone. Standard OCR failed on crumpled, stained, or non-standard receipts.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>The System Architecture</h4>
+                            <ul>
+                                <li>Preprocessing: Computer vision for skew, contrast, noise correction</li>
+                                <li>Extraction: OCR + NER to map unstructured text to structured JSON</li>
+                                <li>Logic Layer: Deterministic validation (totals, dates, bounds)</li>
+                                <li>Human-in-the-Loop: Confidence router with auto-approve thresholds</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>The Outcome</h4>
+                            <p>Processed 10,000+ receipts/day with minimal human intervention. Created a clean data lake enabling near real-time purchasing trend analysis, solving the "offline data gap."</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-study">
+                    <div class="case-study-content">
+                        <h3>AI Sales Suggestions</h3>
+                        <span class="case-study-tag">Lyncs Pulse ERP · Saudi Arabia</span>
+
+                        <div class="case-study-section">
+                            <h4>The Problem</h4>
+                            <p>Sales teams had massive dashboards filled with numbers but lacked direction. They knew what happened, but not what to do next.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>The Solution</h4>
+                            <ul>
+                                <li>Pattern Recognition: Analyzed historical purchase cycles to predict churn</li>
+                                <li>Explainability: AI provided context ("Client X usually orders on Tuesdays")</li>
+                                <li>Feedback Loop: "Was this helpful?" buttons adjusted model weights</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>The Impact</h4>
+                            <p>Transformed the ERP from a "System of Record" to a "System of Engagement." Sales teams gained actionable intelligence, not just historical data.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-visual">
+                        <img src="team.jpg" alt="AI-powered sales intelligence dashboard showing real-time recommendations and performance metrics" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="case-study">
+                    <div class="case-study-content">
+                        <h3>Voice AI — Lara</h3>
+                        <span class="case-study-tag">Lyncs Automated Resource Knowledge</span>
+
+                        <div class="case-study-section">
+                            <h4>The Vision</h4>
+                            <p>Institutional knowledge trapped in PDFs or senior employees' heads. Lara as the "Corporate Cortex" — a voice-accessible brain for the enterprise.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>The Engineering Challenge</h4>
+                            <ul>
+                                <li>Latency: Sub-second responses through optimized inference paths</li>
+                                <li>Context: Understanding who asked and where (Store Manager vs. CEO)</li>
+                                <li>Trust: Graceful failure over hallucination ("I don't have access to that data yet")</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>The Reality Check</h4>
+                            <p>Established strict conversational boundaries. Lara fails gracefully rather than hallucinating numbers, preserving user trust in critical business contexts.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="case-study">
+                    <div class="case-study-content">
+                        <h3>AI in Physical Operations</h3>
+                        <span class="case-study-tag">Computer Vision + Operations</span>
+
+                        <div class="case-study-section">
+                            <h4>Use Cases</h4>
+                            <ul>
+                                <li>CCTV-based queue timing analysis</li>
+                                <li>Delivery duration tracking and optimization</li>
+                                <li>Drive-through vehicle flow intelligence</li>
+                                <li>Warehouse bottleneck detection</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>My Approach</h4>
+                            <p>AI insights focused on flow and efficiency, not surveillance. Ethical boundaries were explicit from day one.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4>Outcome</h4>
+                            <p>Operational visibility without cultural or trust erosion. Teams gained efficiency insights while maintaining privacy and dignity.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">0→1 Leadership</div>
+                <h2 class="section-title">Building the Machine that Builds the Machine</h2>
+                <p class="section-description">
+                    Employee #1 at Lyncs with no code, no team, no roadmap. My role: turn a vision into a functioning engineering organization.
+                </p>
+            </div>
+
+
+            <div class="two-column">
+                <div class="column">
+                    <h3>Orchestrating the 49-Member Team</h3>
+                    <p>I didn't just hire; I structured the engineering culture across global hubs:</p>
+                    <ul style="list-style: none; padding-left: 0; color: var(--secondary); line-height: 2;">
+                        <li>→ React/Mobile teams (remote)</li>
+                        <li>→ DevSecOps (specialized)</li>
+                        <li>→ IoT/Hardware (on-site)</li>
+                        <li>→ POS Systems</li>
+                        <li>→ AR/VR Innovation</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h3>High-Value Transaction Systems</h3>
+                    <p><strong>The Stakes:</strong> The Coffee Address as foundational client</p>
+                    <p><strong>The Volume:</strong> ~1.5 Million SAR in daily transactions</p>
+                    <p><strong>The Pressure:</strong> If the system goes down, revenue stops immediately</p>
+                    <p><strong>The Strategy:</strong> Prioritized Reliability Engineering over feature bloat. Implemented "Offline-First" architecture for POS systems.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Journey</div>
+                <h2 class="section-title">Timeline of Growth</h2>
+                <p class="section-description">
+                    The evolution from mathematical foundations to executive operator.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2016–2020</div>
+                    <div class="timeline-title">The Mathematical Foundation</div>
+                    <div class="timeline-description">
+                        Computer Science, Calculus, Abstract Algebra. Learning to prove correctness before writing code. Developing the "Systems Thinking" mindset.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-title">Enterprise Engineering</div>
+                    <div class="timeline-description">
+                        Business Intelligence (BI) & Automation. Exposure to Fortune-500 constraints. Understanding that "Corporate Software" is about compliance and stability, not just features.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2022–2023</div>
+                    <div class="timeline-title">The Product Strategist</div>
+                    <div class="timeline-description">
+                        Beebag & PioneerSoft. Regulated Markets (Healthcare) & High-Volume Data (FMCG). Learned to manage "Data Quality" as a product feature. Navigated HIPAA compliance and data privacy laws.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2024–Present</div>
+                    <div class="timeline-title">The Executive Operator</div>
+                    <div class="timeline-description">
+                        Lyncs. 0→1 Scale, Global Team Management, ERP Architecture. Merging AI innovation with the rigidity of financial ERP systems. Leading large, cross-cultural teams.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thinking Section -->
+    <section id="thinking" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Philosophy</div>
+                <h2 class="section-title">How I Think</h2>
+                <p class="section-description">
+                    My intellectual orientation shapes every product decision I make.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Neuroscience & Neuroplasticity</h3>
+                    <p>I actively study how learning rewires neural pathways, attention, memory, and cognitive load. This informs reducing cognitive overload in AI interfaces and designing systems that support human judgment.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI, Robotics & Future Intelligence</h3>
+                    <p>Deeply interested in how autonomous systems will evolve and where biological intelligence outperforms machines. I approach AI as augmentation, not replacement.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📐</div>
+                    <h3>Mathematical Thinking</h3>
+                    <p>Grounded in abstraction, functional relationships, optimization thinking, and system dynamics. This mathematical mindset influences how I reason about models and evaluate trade-offs.</p>
+                </div>
+            </div>
+
+            <h3 style="font-size: 2.5rem; font-weight: 700; margin-top: 6rem; margin-bottom: 3rem; text-align: center;">
+                My Core Principles
+            </h3>
+
+            <div class="two-column">
+                <div class="principle-card">
+                    <h4>Reliability > Novelty</h4>
+                    <p>A boring AI that works 99.9% of the time is infinitely more valuable than a brilliant AI that works 80% of the time. In Enterprise, trust is the only currency.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>The Human-in-the-Loop Theorem</h4>
+                    <p>If Human Control is zero, the system value eventually collapses due to edge cases. I build systems where AI suggests, and Humans decide.</p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>Scale Reveals Truth</h4>
+                    <p>You do not know if a system works until you load it with bad data, high traffic, and impatient users. I optimize for the "Worst Case Scenario," not the "Happy Path."</p>
+                </div>
+
+                <div class="principle-card">
+                    <h4>AI is a System, Not a Model</h4>
+                    <p>An LLM alone is not valuable. Value comes from the complete system: data pipelines, infrastructure, human workflows, and feedback loops.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RiseLabs Section -->
+    <section class="section" style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Education & Advocacy</div>
+                <h2 class="section-title">RiseLabs Foundations</h2>
+                <p class="section-description">
+                    Teaching First-Principles AI Engineering. Most AI failures come from poor foundations, not weak models.
+                </p>
+            </div>
+
+            <div class="two-column">
+                <div class="column">
+                    <h3>The Curriculum</h3>
+                    <ul style="list-style: none; padding-left: 0; color: var(--secondary); line-height: 2.2;">
+                        <li>→ Determinism vs. Probabilism</li>
+                        <li>→ The Economics of Intelligence</li>
+                        <li>→ Ethics in Code</li>
+                        <li>→ System Design for AI</li>
+                        <li>→ Human–AI Collaboration</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h3>The Philosophy</h3>
+                    <p>Engineers knew how to code, but they didn't know how to engineer AI. They treated LLMs like magic wands.</p>
+                    <p>RiseLabs teaches engineers to build reliable software on top of probabilistic models, understand token costs and ROI, and implement actual guardrails against bias and hallucination.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Global Collaboration Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Global Impact</div>
+                <h2 class="section-title">Intelligence Has No Borders</h2>
+                <p class="section-description">
+                    Managing 49 members across 5 countries requires cultural engineering, not just project management.
+                </p>
+            </div>
+
+
+            <div class="two-column" style="margin-top: 4rem;">
+                <div class="column">
+                    <h3>Partnerships</h3>
+                    <ul style="list-style: none; padding-left: 0; color: var(--secondary); line-height: 2;">
+                        <li>→ Humain (AI)</li>
+                        <li>→ SCAI</li>
+                        <li>→ Xcelore (Noida)</li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <h3>Global Expansion</h3>
+                    <ul style="list-style: none; padding-left: 0; color: var(--secondary); line-height: 2;">
+                        <li>→ Czech Republic</li>
+                        <li>→ Vietnam</li>
+                        <li>→ Egypt, Syria</li>
+                        <li>→ Brazil, USA</li>
+                        <li>→ India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; padding: 3rem; background: var(--bg-card); border-left: 3px solid var(--primary); border-radius: 8px;">
+                <p style="font-size: 1.2rem; color: var(--secondary); line-height: 1.8;">
+                    <strong style="color: var(--primary);">My Methodology:</strong> I utilize asynchronous documentation (Loom/Notion) to ensure that a developer in Brazil and a PM in Riyadh share the exact same context, eliminating the "Game of Telephone" effect.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Ready to Build Production AI?</h2>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <p style="color: var(--accent); font-size: 1.1rem; margin-bottom: 0.5rem;">📧 aahilkabir@gmail.com</p>
+                <p style="color: var(--secondary); font-size: 1rem;">📍 Chennai, Tamilnadu</p>
+            </div>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                I'm currently available for AI Product Management roles and consulting engagements. Let's discuss how we can build AI systems that scale, earn trust, and deliver real business value.
+            </p>
+
+            <div class="availability-status">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for new opportunities</span>
+                </div>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 3rem; max-width: 800px; margin: 3rem auto; text-align: left;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">Perfect Fit If You:</h3>
+                <ul style="list-style: none; padding-left: 0; color: var(--secondary); line-height: 2.5; font-size: 1.1rem;">
+                    <li>→ Need to transform AI research into production systems</li>
+                    <li>→ Require enterprise-grade AI that meets regulatory standards</li>
+                    <li>→ Want to scale AI teams from prototype to global operations</li>
+                    <li>→ Seek AI solutions that prioritize reliability over novelty</li>
+                    <li>→ Need strategic guidance on AI product roadmap and architecture</li>
+                </ul>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="mailto:aahilkabir@gmail.com" class="btn btn-primary">Start a Conversation</a>
+                <a href="https://drive.google.com/file/d/1I6D2KqiLZLzykSx00BoQQsahVs3lXybG/view?usp=sharing" target="_blank" class="btn btn-secondary">View Portfolio</a>
+                <a href="https://www.linkedin.com/in/mohammedksa/" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
+            </div>
+
+            <div class="response-time">
+                <p style="color: var(--secondary); font-size: 0.9rem; margin-top: 2rem;">
+                    📬 Typically responds within 24 hours
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-quote">
+                    "Building intelligent systems that respect human cognition, scale under real-world pressure, and deliver durable value."
+                </p>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div style="text-align: center; margin-top: 3rem; color: var(--accent); font-size: 0.9rem;">
+                © 2025 Mohammed Kabir Shabhir Ahamed. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Performance: Defer non-critical JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add fade-in animations to sections
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-based nav background opacity
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(0, 0, 0, 0.98)';
+            } else {
+                nav.style.background = 'rgba(0, 0, 0, 0.95)';
+            }
+        });
+
+        // Add active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
